@@ -1,0 +1,17 @@
+{
+  "name": "daily_likesBot",
+  "version": "0.0.1-master",
+  "main": "./index.js",
+  "dependencies": {
+    "instagram-api": "^1.0.2",
+    "underscore": "^1.8.3",
+    "q": "^1.4.1"
+  },
+  "author": "matteomenapace",
+  "description": "An Instagram growth-hacking experiment, which will engage users who post media similar to @daily_monthly through targeted likes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matteomenapace/daily_likesBot.git"
+  },
+  "license": "CC-BY-NC-4.0"
+}
