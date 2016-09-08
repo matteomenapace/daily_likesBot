@@ -4,8 +4,10 @@
   "main": "./index.js",
   "dependencies": {
     "instagram-api": "^1.0.2",
-    "underscore": "^1.8.3",
-    "q": "^1.4.1"
+    "phantomjs-prebuilt": "^2.1.12",
+    "q": "^1.4.1",
+    "spooky": "^0.2.5",
+    "underscore": "^1.8.3"
   },
   "author": "matteomenapace",
   "description": "An Instagram growth-hacking experiment, which will engage users who post media similar to @daily_monthly through targeted likes",

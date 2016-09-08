@@ -1,6 +1,5 @@
 var config = require('./config'),
     _ = require('underscore'),
-    q = require('q'),
     InstagramAPI = require('instagram-api'),
     instagram = new InstagramAPI(config.instagramKeys.access_token)
 
@@ -91,7 +90,7 @@ function getRecentlyTaggedPosts(tag, callback)
   })
 }
 
-getOurLastPosts(3, function(err, posts)
+/*getOurLastPosts(3, function(err, posts)
 {
   if (!err)
   {
@@ -121,4 +120,30 @@ getOurLastPosts(3, function(err, posts)
       })
     })
   }  
+})*/
+
+// mediaID example: 1331338200027067242_3579436711
+// shortcode example: BKG17noB9Db
+
+// var shortcode = 'BKG17noB9Db' // not my picture
+var shortcode = 'BJ53QoIhXNq' // one of my pictures
+instagram.mediaByShortcode(shortcode).then(function(result) 
+{
+  console.log(result.data)
+  logRemainingRequests(result)
+}, 
+function(err)
+{
+  console.log(err) 
 })
+
+/*instagram.postMediaLike(mediaID).then(function(result) 
+{
+  console.log(result.data) // user info 
+  logRemainingRequests(result)
+}, 
+function(err)
+{
+  console.log(err) 
+})*/
+
